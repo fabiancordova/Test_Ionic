@@ -1,0 +1,36 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Ejercicio
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Blank</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+<div id="container">
+    <ion-grid>
+      <ion-row class="ion-align-items-center">
+        <ion-col sizeMd="4" offsetMd="4" class="ion-align-self-center">          
+          <ion-button [href]="'/usuarios/'" routerDirection="forward">
+            Personas           
+            <ion-icon slot="end" name="person">           
+            </ion-icon>
+          </ion-button>       
+        </ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center">
+        <ion-col sizeMd="4" offsetMd="4" class="ion-align-self-center">
+          <ion-button [href]="'/regiones/'" routerDirection="forward">
+            Regiones
+            <ion-icon slot="end" name="earth-outline"></ion-icon>
+          </ion-button>   
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+</div>

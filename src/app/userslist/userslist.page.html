@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Personas</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col sizeMd="3" offsetMd="4">
+        <ion-list>
+          <ion-item text-center *ngFor="let character of characters" [routerLink]="['/profile/' + character.id]">
+            <ion-label >
+              <ion-icon slot="end" name="person" class="margen"> </ion-icon> {{character.nombre}}
+            </ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
